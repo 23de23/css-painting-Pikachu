@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>使用css画一只皮卡丘</title>
+		<link rel="stylesheet" href="styles/defalut.css">
+		<style id="styleTag"></style>
+	</head>
+	<body>
+
+		<!-- 文字展示区域 -->
+		<div class="code-wrapper">
+			<pre id="code"></pre>
+		</div>
+
+		<!-- 动画展示区域 -->
+		<div class="preview-wrapper">
+			<div class="preview">
+				<div class="wraper">
+					
+					<div class="lower_lip_wraper">
+						<div class="lower_lip"></div>
+					</div>
+					
+					<div class="nose"></div>  <!-- 鼻子区域 -->
+					<div class="eye left"></div> <!-- 左眼 -->
+					<div class="eye right"></div> <!-- 右眼 -->
+					<div class="face left"></div> <!-- 左脸蛋 -->
+					<div class="face right"></div> <!-- 右脸蛋 -->
+					<div class="upper_lip left"></div> <!-- 左胡须 -->
+					<div class="upper_lip right"></div> <!-- 右胡须 -->
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 按钮 -->
+		<div class="actions">
+			<button data-speed="slow">慢 速</button>
+			<button data-speed="normal" class="active">中 速</button>
+			<button data-speed="fast">快 速</button>
+		</div>
+
+
+		<!-- jq文件以及js文件引入 -->
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
